@@ -12,11 +12,21 @@ A powerful CLI tool to manage ElevenLabs Conversational AI agents using local co
 - **Agent Import**: Fetch existing agents from ElevenLabs workspace
 - **Widget**: View HTML widget snippets for agents
 - **TypeScript Support**: Built with TypeScript for type safety and better IDE support
-- **NPM Distribution**: Easy installation via npm
+- **Package Manager Support**: Easy installation via pnpm/npm
 
 ## Installation
 
-### Via NPM (Recommended)
+### Via pnpm (Recommended)
+
+```bash
+# Global installation
+pnpm install -g convai-cli
+
+# Or use pnpm dlx for one-time usage
+pnpm dlx convai-cli init
+```
+
+### Via npm (Alternative)
 
 ```bash
 # Global installation
@@ -31,9 +41,9 @@ npx convai-cli init
 ```bash
 git clone https://github.com/angelogiacco/convai-npm
 cd convai-npm
-npm install
-npm run build
-npm link  # For global usage
+pnpm install
+pnpm run build
+pnpm link  # For global usage
 ```
 
 ## Configuration
@@ -503,7 +513,7 @@ convai sync
 
 ### Running Tests
 ```bash
-npm test
+pnpm test
 ```
 
 ### Contributing
@@ -511,7 +521,7 @@ npm test
 2. Create a feature branch
 3. Make your changes
 4. Add tests if applicable
-5. Run linting and formatting: `npm run lint && npm run format`
+5. Run linting and formatting: `pnpm run lint && pnpm run format`
 6. Submit a pull request
 
 ### Project Structure
@@ -527,22 +537,22 @@ src/
 ### Development Commands
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Build the project
-npm run build
+pnpm run build
 
 # Run in development mode
-npm run dev
+pnpm run dev
 
 # Run linting
-npm run lint
+pnpm run lint
 
 # Format code
-npm run format
+pnpm run format
 
 # Run tests
-npm test
+pnpm test
 ```
 
 ## Support
