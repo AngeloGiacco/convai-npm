@@ -1,0 +1,51 @@
+# Source files
+src/
+*.ts
+!dist/**/*.d.ts
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+__tests__/
+*.test.ts
+*.spec.ts
+coverage/
+
+# Config files
+tsconfig.json
+.eslintrc*
+.prettierrc*
+jest.config.*
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+.travis.yml
+.circleci/
+
+# Documentation (keep README.md)
+docs/
+
+# Example/demo files
+examples/
+demos/
+
+# Logs
+*.log
+
+# Environment
+.env*
+
+# Build artifacts
+*.tsbuildinfo
+
+# convai specific (exclude from published package)
+agent_configs/
+convai.lock 
