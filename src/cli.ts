@@ -3,7 +3,6 @@
 import { Command } from 'commander';
 import * as path from 'path';
 import * as fs from 'fs-extra';
-import * as chokidar from 'chokidar';
 import * as dotenv from 'dotenv';
 import { 
   calculateConfigHash, 
